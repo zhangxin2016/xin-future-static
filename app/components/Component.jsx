@@ -1,6 +1,6 @@
 //Component1.jsx
 import React from 'react';
-import bootstrap from '../css/style.css'; //模块应用css
+import style from '../css/style.css'; //模块应用css
 import $ from '../js/jquery-3.2.1.min.js'
 var MainBox  = React.createClass({
     render:function(){
@@ -16,7 +16,7 @@ var App = React.createClass({
         };
     },
     componentDidMount(){
-        this.getDataFromServer('http://localhost:8088/article/list/');
+        this.getDataFromServer('http://localhost:8088/article/list/?username=admin');
     },
     showResult: function(response) {
         this.setState({
@@ -63,7 +63,7 @@ var ResultItem = React.createClass({
         var camper = this.props.value;
         return(
             <div>
-                <div>{camper.id}</div>
+                <div id={style.content}>{camper.id}</div>
                 <div dangerouslySetInnerHTML={{__html: camper.blogcontent}}></div>
             </div>
         );
@@ -77,7 +77,6 @@ class Component extends React.Component {
         )
     }
 }
-
 
 //导出组件
 export default Component;

@@ -1,0 +1,48 @@
+body{
+    background-color: #f1f1f1;
+}
+#banner{
+    background-color: #5bc0de;
+    width: 100%;
+    height: 200px;
+}
+#article{
+    width: 68%;
+    height: 500px;
+    background-color: #ffffff;
+    margin-top: 60px;
+    margin-left: 5%;
+    margin-right: 2%;
+    float: left;
+    border-radius:10px;
+}
+#catalog{
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+}
+#personalInformation,#blogType,#blogTime{
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    margin-top: 60px;
+    border-radius:10px;
+}
+#myInfo,#typeTitle,#timeTitle{
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    border-radius:10px 10px 0 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    letter-spacing:8px;
+}
+#articleTitie{
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    border-radius:10px 10px 0 0;
+}
