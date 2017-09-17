@@ -62,14 +62,20 @@ var ResultItem = React.createClass({
     render:function(){
         var camper = this.props.value;
         return(
-            <div id={style.article}>
-                <div id={style.articleTitie}>
-                    <span> {camper.blogtitie}</span>
+            <div id={style.listAllArticle}>
+                <div id={style.listDate}>
+                    <div id={style.listDateContent}>
+                        2017年9月17日
+                    </div>
                 </div>
-                <div id={style.articleAbstract}>
+                <div id={style.listTitle}>
+                    <a> {camper.blogtitie}</a>
+                </div>
+                <div id={style.listAbstract}>
                     摘要：{camper.blogabstract}
                 </div>
-                <div id={style.articleContent} dangerouslySetInnerHTML={{__html: camper.blogcontent}}>
+                <div id={style.listDesc}>
+                    posted @ 2017-09-17 20:53 xinxin 阅读(63) 评论(0) 编辑
                 </div>
             </div>
         );

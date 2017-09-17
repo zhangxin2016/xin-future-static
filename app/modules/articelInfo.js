@@ -2,9 +2,9 @@
  * Created by zhangx on 2017/9/15.
  */
 import React from 'react'
-
+import Component1 from '../components/ArticleList.jsx';
 export default React.createClass({
     render() {
-        return <div>这是info页面</div>
+        return <Component1/>
     }
 })

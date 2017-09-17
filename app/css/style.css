@@ -2,4 +2,103 @@
     background: yellow;
 }
 
-
+#articleTitie{
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    border-radius:10px 10px 0 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 17px;
+    letter-spacing:8px;
+}
+#articleAbstract{
+    background-color: #adadad;
+    border-radius:10px;
+    margin-top: 30px;
+    margin-left: 3%;
+    width: 94%;
+    font-size: 15px;
+    color: yellow;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#articleContent{
+    margin-top: 30px;
+    margin-left: 3%;
+    width: 94%;
+}
+#article{
+    background-color: #ffffff;
+}
+#listDate{
+    background-color: #eb374b;
+    display: block;
+    left: -40px;
+    min-width: 140px;
+    padding: 6px 10px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+}
+#listDate::before{
+    border-color: #eb374b blue yellow transparent;
+    border-style: solid;
+    border-width: 20px 0 0 40px;
+    content: " ";
+    display: block;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+#listDateContent{
+    color: #fff;
+    font-family: Arvo,Cambria,Georgia,Times,serif;
+    font-size: 18px;
+    vertical-align: middle;
+}
+#listAllArticle{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    padding: 40px 20px 10px 20px;
+    position: relative;
+}
+#listTitle{
+    border-left: 5px solid #e84c3d;
+    font-weight: 500;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 0 2em 0 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#listTitle a{
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease 0s;
+}
+#listAbstract{
+    color: #4d4d4d;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+#listDesc{
+    border-top: 1px solid #dee1e0;
+    color: #bfbfbf;
+    line-height: 50px;
+    min-height: 50px;
+    padding: 0 10px 0 10px;
+}

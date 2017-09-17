@@ -3,44 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>鑫未来博客</title>
+    <!--样式参考：http://www.cnblogs.com/ityouknow/-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!--<div id="app"></div>
-&lt;!&ndash;banner&ndash;&gt;
+<div id="app"></div>
+<!--banner-->
 <div id="banner">
 
 </div>
 <div>
-    &lt;!&ndash;文章内容&ndash;&gt;
-    <div id="article">
-        <div id="articleTitie">
-            <span> 我是文章的标题 </span>
-        </div>
-        <div id="articleContent">
-
-        </div>
+    <!--文章内容-->
+    <div id="articleAll">
     </div>
-    &lt;!&ndash;右侧导航&ndash;&gt;
+    <!--右侧导航-->
     <div id="catalog">
-        &lt;!&ndash;个人信息&ndash;&gt;
+        <!--个人信息-->
         <div id="personalInformation">
             <div id="myInfo"> 个人信息 </div>
-            <div id="myInfoContent"></div>
+            <div id="myInfoContent">
+            </div>
         </div>
-        &lt;!&ndash;类别目录&ndash;&gt;
+        <!--类别目录-->
         <div id="blogType">
             <div id="typeTitle"> 博客类型</div>
-            <div id="typeContent"></div>
+            <div id="typeContent">
+                <ul>
+                    <li><a href="/list">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
         </div>
-        &lt;!&ndash;时间分目录&ndash;&gt;
+        <!--时间分目录-->
         <div id="blogTime">
             <div id="timeTitle">时间分类</div>
             <div id="timeContent"></div>
         </div>
     </div>
-</div>-->
+</div>
 <div id="content" class="root"></div>
 <script src="http://localhost:8080/webpack-dev-server.js"></script>
 <script src="bundle.js"></script>
