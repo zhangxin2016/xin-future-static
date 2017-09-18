@@ -102,3 +102,19 @@
     min-height: 50px;
     padding: 0 10px 0 10px;
 }
+#typeLi ul{
+    padding:10px;
+}
+#typeLi ul li{
+    border-bottom: 1px dashed #e1e1e1;
+    font-family: Georgia,"Times New Roman",Times,sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+#typeLi ul li a{
+    color: #000000;
+}

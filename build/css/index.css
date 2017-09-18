@@ -19,13 +19,20 @@ body{
     margin-right: 5%;
     float: left;
 }
-#personalInformation,#blogType,#blogTime{
+#personalInformation,#blogTime{
     width: 100%;
     height: 400px;
     background-color: #ffffff;
     margin-top: 60px;
     border-radius:10px;
 }
+#blogType{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 60px;
+    border-radius:10px;
+}
+
 #myInfo,#typeTitle,#timeTitle{
     width: 100%;
     height: 50px;
