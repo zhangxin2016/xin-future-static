@@ -66,7 +66,7 @@ var ResultItem = React.createClass({
         var camper = this.props.value;
         return(
             <Router>
-                <li><a href={'/list?id='+camper.typeName}>{camper.typeName}({camper.count})</a></li>
+                <li><a href={'/list?id='+camper.uuid}>{camper.typeName}({camper.count})</a></li>
             </Router>
         );
     }

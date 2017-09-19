@@ -16,7 +16,7 @@ var App = React.createClass({
         };
     },
     componentDidMount(){
-        this.getDataFromServer('http://localhost:8088/article/list/?username=admin');
+        this.getDataFromServer('http://localhost:8088/article/listByType/?username=admin&typeuuid='+getQueryString("id"));
     },
     showResult: function(response) {
         this.setState({
@@ -69,7 +69,7 @@ var ResultItem = React.createClass({
                     </div>
                 </div>
                 <div id={style.listTitle}>
-                    <a> {camper.blogtitie}</a>
+                    <a href={'/info?id='+camper.createUuid}> {camper.blogtitie}</a>
                 </div>
                 <div id={style.listAbstract}>
                     摘要：{camper.blogabstract}
@@ -88,6 +88,12 @@ class Component extends React.Component {
             <MainBox/>
         )
     }
+}
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
 }
 
 //导出组件

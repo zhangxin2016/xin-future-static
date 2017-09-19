@@ -16,7 +16,7 @@ var App = React.createClass({
         };
     },
     componentDidMount(){
-        this.getDataFromServer('http://localhost:8088/article/list/?username=admin');
+        this.getDataFromServer('http://localhost:8088/article/get/?create_uuid='+getQueryString("id"));
     },
     showResult: function(response) {
         this.setState({
@@ -83,6 +83,11 @@ class Component extends React.Component {
         )
     }
 }
-
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+}
 //导出组件
 export default Component;
