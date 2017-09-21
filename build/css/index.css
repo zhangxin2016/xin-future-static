@@ -25,6 +25,7 @@ body{
     background-color: #ffffff;
     margin-top: 60px;
     border-radius:10px;
+    margin-bottom: 100px;
 }
 #blogType{
     width: 100%;
@@ -45,9 +46,26 @@ body{
     padding-top: 10px;
     letter-spacing:8px;
 }
-#articleTitie{
+
+#myhead{
     width: 100%;
-    height: 70px;
-    background-color: #000000;
-    border-radius:10px 10px 0 0;
+    height: 150px;
+    margin-top: 20px;
+    text-align: center;
 }
+#myhead img{
+    border-radius:100px
+}
+#myheadright{
+    margin-top: 20px;
+    font-size: 20px;
+    height: 150px;
+    color: #9d9d9d;
+    line-height: 35px;
+    margin-left: 35%;
+}
+#bodycontent{
+    width: 100%;
+    height: 100%;
+}
+

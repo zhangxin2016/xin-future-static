@@ -14,6 +14,7 @@ ReactDom.render((
     <Router>
         <div>
             <Route exact path="/list" component={All} />
+            <Route path="/" component={All} />
             <Route path="/info" component={Info} />
         </div>
     </Router>

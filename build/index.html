@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>鑫未来博客</title>
@@ -13,7 +13,7 @@
 <div id="banner">
 
 </div>
-<div>
+<div id="bodycontent">
     <!--文章内容-->
     <div id="articleAll">
     </div>
@@ -23,6 +23,20 @@
         <div id="personalInformation">
             <div id="myInfo"> 个人信息 </div>
             <div id="myInfoContent">
+                <div id="myhead">
+                    <img src="images/head.jpg">
+                </div>
+                <div id="myheadright">
+                    昵称 : zhangxin
+                    </br>
+                    性别 : 男
+                    </br>
+                    鑫未来，新未来
+                    </br>
+                </div>
+                <div id="myheadbottom">
+
+                </div>
             </div>
         </div>
         <!--类别目录-->
@@ -40,10 +54,12 @@
             <div id="timeTitle">时间分类</div>
             <div id="timeContent"></div>
         </div>
+
     </div>
 </div>
-<div id="content" class="root"></div>
+
 <script src="http://localhost:8080/webpack-dev-server.js"></script>
 <script src="bundle.js"></script>
+
 </body>
 </html>
