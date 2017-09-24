@@ -1,11 +1,7 @@
 body{
     background-color: #f1f1f1;
 }
-#banner{
-    background-color: #000000;
-    width: 100%;
-    height: 200px;
-}
+
 #articleAll{
     width: 68%;
     margin-top: 60px;
@@ -13,6 +9,7 @@ body{
     margin-right: 2%;
     float: left;
     border-radius:10px;
+    margin-bottom: 60px;
 }
 #catalog{
     width: 20%;
@@ -25,19 +22,19 @@ body{
     background-color: #ffffff;
     margin-top: 60px;
     border-radius:10px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 #blogType{
     width: 100%;
     background-color: #ffffff;
-    margin-top: 60px;
+    margin-top: 20px;
     border-radius:10px;
 }
 
 #myInfo,#typeTitle,#timeTitle{
     width: 100%;
     height: 50px;
-    background-color: #000000;
+    background-color: #131418;
     border-radius:10px 10px 0 0;
     text-align: center;
     color: #ffffff;
@@ -45,6 +42,10 @@ body{
     font-weight: bold;
     padding-top: 10px;
     letter-spacing:8px;
+}
+#articleinfodetail{
+    margin-bottom: 60px;
+    width: 100%;
 }
 
 #myhead{
@@ -67,5 +68,64 @@ body{
 #bodycontent{
     width: 100%;
     height: 100%;
+}
+#bannerh{
+    width: 100%;
+    height: 250px;
+}
+.banner {
+    background-repeat: no-repeat;
+    background-color: #17181c;
+    width: 100%;
+    z-index: 1;
+    top: 50px;
+    height: 250px;
+    padding-top: 45px;
+}
+
+.banner h1.h1 {
+    color: #fff;
+    font-size: 34px;
+    margin-top: 47px;
+}
+
+.banner p {
+    color: #999;
+    font-size: 15px;
+}
+
+.banner .search-box {
+    width: 507px;
+    height: 36px;
+    position: relative;
+}
+
+.banner .search-box .search {
+    width: 505px;
+    height: 34px;
+    background-color: #131418;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 34px;
+    opacity: 0.8;
+    border: 1px solid rgb(44, 44, 44);
+    color: #b7b7b7;
+    transition: all 1.5s ease 0s;
+    font-family: "Microsoft Yahei"
+}
+
+.banner .search-box i {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+    cursor: pointer;
+}
+
+.banner .search-box i:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+#logoid{
+    padding-top: 5px;
 }
 
