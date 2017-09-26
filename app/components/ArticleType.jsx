@@ -148,35 +148,6 @@ var ResultAll = React.createClass({
         });
         return(
             <div>
-                <div>
-                    <div id="bannerh">
-                        <nav className="navbar navbar-inverse navbar-fixed-top">
-                            <div className="container-fluid">
-                                <div className="navbar-header">
-                                    <a className="logo"><img id="logoid" src="images/logo.png"></img></a>
-                                </div>
-                                <div id="navbar" className="navbar-collapse collapse">
-                                    <ul className="nav navbar-nav navbar-right">
-                                        <li><a href=""><i className="fa fa-code"></i>首页</a></li>
-                                        <li><a href=""><i className="fa fa-download"></i>文章</a></li>
-                                        <li><a href=""><i className="fa fa-rocket"></i>相册</a></li>
-                                        <li><a href=""><i className="fa fa-book"></i>说说</a></li>
-                                        <li><a href=""><i className="fa fa-weibo"></i>微博</a></li>
-                                        <li><a href=""><i className="fa fa-user"></i>注册/登录</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                        <div className="container-fluid banner bank">
-                            <h1 className="text-center h1">Xin Future & New Future</h1>
-                            <p className="text-center">The future of the road a lot of challenges, do not give up, do not be confused, look better than their own</p>
-                            <div className="search-box center-block">
-                                <input type="text" className="search center-block" placeholder="搜索..."></input>
-                                <i className="fa fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div id="articleAll">
                     {dataList}
                 </div>

@@ -34,6 +34,10 @@ module.exports = {//注意这里是exports不是export
                     }
                 ]
             },
+            {
+                test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
+                loader: 'url-loader?limit=8192'
+            },
         ]
     },
 

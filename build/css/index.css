@@ -128,4 +128,8 @@ body{
 #logoid{
     padding-top: 5px;
 }
-
+#bottom{
+    background-color: #1b6d85;
+    height: 100px;
+    width: 100%;
+}
