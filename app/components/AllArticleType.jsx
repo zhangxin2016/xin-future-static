@@ -3,8 +3,6 @@ import React from 'react';
 import style from '../css/allArticleType.css'; //模块应用css
 import $ from '../js/jquery-3.2.1.min.js'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jpg from '../images/1.jpg'
-var a = require("../images/1.jpg");
 var MainBox  = React.createClass({
     render:function(){
         return(
@@ -55,9 +53,13 @@ var Result = React.createClass({
         });
         return(
             <div>
-                <div id="portfolio-content" className="center-text">
-                    <div className="portfolio-page" id="page-1">
-                        {result}
+                <div id="typeContent">
+                    <div className="row">
+                        <div className="col-md-12" id={style.typeLi}>
+                            <ul>
+                                {result}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,17 +72,10 @@ var ResultItem = React.createClass({
         var camper = this.props.value;
         return(
             <Router>
-
-                <div className="portfolio-group">
-                    <a className="portfolio-item">
-                        <image src={a} alt="image 1">
-                            <div className="detail">
-                                <h3>Wavy Road</h3>
-                                <p>Duis ac laoreet mi. Maecenas non lorem sed elit molestie tincidunt. Vestibulum tincidunt libero urna, ut dignissim purus accumsan nec.</p>
-                                <span className="btn">View</span>
-                            </div>
-                        </image>
-                    </a>
+                <div>
+                    <div>
+                        <a href={'/list?id='+camper.uuid}><li>{camper.typeName}({camper.count})</li></a>
+                    </div>
                 </div>
             </Router>
         );
