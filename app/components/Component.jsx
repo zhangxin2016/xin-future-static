@@ -97,9 +97,6 @@ var Result = React.createClass({
         });
         return(
             <div>
-                <div>
-
-                </div>
                 <div id="bodycontent">
                     <div id="catalog">
                         <div id="personalInformation">
@@ -109,9 +106,9 @@ var Result = React.createClass({
                                     <img src="images/head.jpg"></img>
                                 </div>
                                 <div id="myheadright">
-                                    昵称 : zhangxin
+                                    zhangxin
                                     <br/>
-                                    性别 : 男
+                                    新未来，乐分享
                                     <br/>
                                     鑫未来，新未来
                                     <br/>
@@ -131,10 +128,6 @@ var Result = React.createClass({
                                 </div>
                             </div>
                         </div>
-                        <div id="blogTime">
-                            <div id="timeTitle">时间分类</div>
-                            <div id="timeContent"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -148,10 +141,17 @@ var ResultAll = React.createClass({
         });
         return(
             <div>
-                <div id="articleAll">
-                    {dataList}
+                <div className="centerlist">
+                    <div>
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div id="articleAll">
+                                    {dataList}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         );
     }
@@ -192,7 +192,7 @@ class Component extends React.Component {
     render() {
         return (
             <div>
-                <MainBoxList/><MainBox/>
+                <MainBoxList/>
             </div>
         )
     }

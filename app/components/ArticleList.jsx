@@ -149,8 +149,16 @@ var ResultAll = React.createClass({
         });
         return(
             <div>
-                <div id="articleAll">
-                    {dataList}
+                <div className="centerlist">
+                    <div>
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div id="articleAll">
+                                    {dataList}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
@@ -200,7 +208,7 @@ class Component extends React.Component {
     render() {
         return (
             <div>
-                <MainBoxList/><MainBox/>
+                <MainBoxList/>
             </div>
         )
     }

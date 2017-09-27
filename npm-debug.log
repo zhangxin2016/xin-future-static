@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@3.10.10
+3 info using node@v7.2.1
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle xin-future-static@1.0.0~predev: xin-future-static@1.0.0
+6 silly lifecycle xin-future-static@1.0.0~predev: no script for predev, continuing
+7 info lifecycle xin-future-static@1.0.0~dev: xin-future-static@1.0.0
+8 verbose lifecycle xin-future-static@1.0.0~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle xin-future-static@1.0.0~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\work\zhangx\home\xin-future-static\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Java\jdk1.8.0_25\jre\bin;C:\work\zhangx\work_soft\Git\cmd;C:\work\zhangx\work_soft\gradle\gradle-2.14\BIN;C:\zookeeper-3.4.9\conf\bin;C:\work\zhangx\work_soft\redis\redis;C:\Program Files\nodejs\;C:\work\spark-2.0.2-bin-hadoop2.7\bin;C:\work\spark-2.0.2-bin-hadoop2.7\sbin;C:\work\scala\bin;C:\work\hadoop-2.7.3\bin;C:\work\zhangx\work_soft\apache-maven-3.3.9\bin;C:\work\hadoop-2.7.3\sbin;C:\work\zhangx\work_soft\apache-ignite-fabric-1.8.0-bin\bin;C:\work\scala\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\work\Google\Cloud SDK\google-cloud-sdk\bin;C:\work\zhangx\work_soft;C:\work\zhangx\work_soft\Python3\Scripts\;C:\work\zhangx\work_soft\Python3\;C:\Users\zhangx\AppData\Local\Microsoft\WindowsApps;C:\Users\zhangx\AppData\Roaming\npm
+10 verbose lifecycle xin-future-static@1.0.0~dev: CWD: C:\work\zhangx\home\xin-future-static
+11 silly lifecycle xin-future-static@1.0.0~dev: Args: [ '/d /s /c', 'webpack-dev-server --inline' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1022:11)
+12 verbose stack     at process.kill (internal/process.js:173:13)
+12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:200:44)
+13 verbose cwd C:\work\zhangx\home\xin-future-static
+14 error Windows_NT 10.0.14393
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
+16 error node v7.2.1
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

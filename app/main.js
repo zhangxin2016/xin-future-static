@@ -7,6 +7,7 @@ import Info from './modules/articelInfo'
 import ArticleType from './components/ArticleType.jsx';
 import AllArticleType from './components/AllArticleType.jsx';
 import Component1 from './components/Component.jsx';
+import allList from './modules/articleAll'
 //require("./css/style.css"); //全局引用css
 /*ReactDom.render((
     <ArticleType/>
@@ -15,7 +16,7 @@ import Component1 from './components/Component.jsx';
 ReactDom.render((
     <Router>
         <div>
-            <Route exact path="/" component={ArticleType} />
+            <Route exact path="/" component={allList} />
             <Route path="/list" component={All} />
             <Route path="/info" component={Info} />
             <Route path="/allType" component={AllArticleType} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import style from '../css/style.css'; //模块应用css
 import $ from '../js/jquery-3.2.1.min.js'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 var MainBox  = React.createClass({
     render:function(){
         return(
@@ -49,9 +50,15 @@ var Result = React.createClass({
             return <ResultItem key={index} value={ result } />
         });
         return(
-            <div className="row">
-                <div className="col-md-12">
-                    {result}
+            <div className="centerlist">
+                <div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="acticleAllList">
+                                {result}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
@@ -63,22 +70,27 @@ var ResultItem = React.createClass({
         var time = new Date(camper.createTime).Format("yyyy-MM-dd");
         var create_time = new Date(camper.createTime).Format("yyyy-MM-dd hh:mm:ss");
         return(
-            <div id={style.listAllArticle}>
-                <div id={style.listDate}>
-                    <div id={style.listDateContent}>
-                        {time}
+            <Router>
+                <div>
+                    <div id={style.listAllArticle}>
+                        <div id={style.listDate}>
+                            <div id={style.listDateContent}>
+                                {time}
+                            </div>
+                        </div>
+                        <div id={style.listTitle}>
+                            <a href={'/info?id='+camper.createUuid}> {camper.blogtitie}</a>
+                        </div>
+                        <div id={style.listAbstract}>
+                            摘要：{camper.blogabstract}
+                        </div>
+                        <div id={style.listDesc}>
+                            posted @ {create_time} {camper.blogauthor}  编辑
+                        </div>
                     </div>
                 </div>
-                <div id={style.listTitle}>
-                    <a href={'/info?id='+camper.createUuid}> {camper.blogtitie}</a>
-                </div>
-                <div id={style.listAbstract}>
-                    摘要：{camper.blogabstract}
-                </div>
-                <div id={style.listDesc}>
-                    posted @ {create_time} {camper.blogauthor}  编辑
-                </div>
-            </div>
+            </Router>
+
         );
     }
 });

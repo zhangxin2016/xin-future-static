@@ -15,14 +15,13 @@
     letter-spacing:8px;
 }
 #articleAbstract{
-    background-color: #adadad;
+    background-color: #f1f1f1;
     border-radius:10px;
     margin-top: 30px;
     margin-left: 3%;
     width: 94%;
     font-size: 15px;
     color: #131418;
-    font-weight:bold;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -34,6 +33,7 @@
 }
 #article{
     background-color: #ffffff;
+    border-radius:10px;
 }
 #listDate{
     background-color: #eb374b;
@@ -67,7 +67,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding: 40px 20px 10px 20px;
     position: relative;
 }
@@ -123,4 +123,9 @@
 }
 #typeLi ul li a{
     color: #000000;
+}
+#acticleAllList{
+    width: 80%;
+    padding-top: 50px;
+    float: left;
 }
