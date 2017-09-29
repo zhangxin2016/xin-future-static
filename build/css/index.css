@@ -1,11 +1,16 @@
-body{
-    background-color: #f1f1f1;
+body {
+    background-color: #ffffff;
+   /* background-image: url("../images/new.jpg");
+    height:100%;
+    width:100%;
+    display:block;
+    padding-bottom: 150px;*/
 }
 
 #articleAll{
-    width: 80%;
+    width: 60%;
     margin-top: 60px;
-    margin-left: 10%;
+    margin-left: 20%;
     float: left;
     border-radius:10px;
     margin-bottom: 60px;
@@ -142,4 +147,18 @@ body{
     height: 100px;
     width: 100%;
     margin-top: 150px;
+    margin-bottom: 0px;
 }
+/* footer */
+footer { border-top: 9px solid #f16e50; background: #242221; width: 100%; }
+.footavatar { width: 700px; margin: auto; position: relative; color: #666; }
+.footavatar img{ height:110px}
+.footphoto { position: absolute; top: -58px; left: 20px; display: block; border: #F16E50 5px solid; }
+.footinfo { display: block; padding: 0 0 0 160px }
+.fname { color: #f16e50; margin-top: 16px; font-size: 18px; line-height: 28px; }
+.fname a { color: #f16e50; }
+.finfo { line-height: 22px; }
+.Copyright { text-align: center; color: #959595; margin: 40px 0 0 }
+.Copyright ul a { color: #f16e50; display: inline; padding: 0 10px; }
+.Copyright ul a:nth-child(-n+3) { border-right: #999 1px solid }
+.Copyright ul a:hover { color: #ff8b70; }

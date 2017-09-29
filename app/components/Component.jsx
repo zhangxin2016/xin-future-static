@@ -2,11 +2,19 @@
 import React from 'react';
 import style from '../css/style.css'; //模块应用css
 import $ from '../js/jquery-3.2.1.min.js'
+import auto from '../js/jquery.autoMenu.js'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 var MainBox  = React.createClass({
     render:function(){
         return(
             <App/>
+        );
+    }
+});
+var autoMenu = React.createClass({
+    render:function(){
+        return(
+            <auto/>
         );
     }
 });
@@ -148,10 +156,12 @@ var ResultAll = React.createClass({
                                 <div id="articleAll">
                                     {dataList}
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <div className="autoMenu" id="autoMenu" data-autoMenu> </div>
             </div>
         );
     }
@@ -192,7 +202,7 @@ class Component extends React.Component {
     render() {
         return (
             <div>
-                <MainBoxList/>
+                <MainBoxList/>,<auto/>
             </div>
         )
     }
