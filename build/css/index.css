@@ -85,6 +85,7 @@ body {
     top: 50px;
     height: 250px;
     padding-top: 45px;
+    box-shadow: 0 0 10px #666666;
 }
 
 .banner h1.h1 {
@@ -129,8 +130,21 @@ body {
     color: #fff;
     transition: all 0.5s;
 }
+.center-block input{
+    outline: none;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 #logoid{
     padding-top: 5px;
+    width: 200px;
+    height: 37px;
 }
 
 .acticleAllList{
