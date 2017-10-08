@@ -53,14 +53,12 @@ var Result = React.createClass({
         });
         return(
             <div>
-                <div id="typeContent">
-                    <div className="row">
-                        <div className="col-md-12" id={style.typeLi}>
-                            <ul>
-                                {result}
-                            </ul>
-                        </div>
-                    </div>
+                <div className="wrap" id="wrap">
+                    <main>
+                        <ul className="ul items">
+                            {result}
+                        </ul>
+                    </main>
                 </div>
             </div>
         );
@@ -74,7 +72,25 @@ var ResultItem = React.createClass({
             <Router>
                 <div>
                     <div>
-                        <a href={'/list?id='+camper.uuid}><li>{camper.typeName}({camper.count})</li></a>
+                        <a href={'/list?id='+camper.uuid}>
+                            <li>
+                                <figure className="effect-jazz">
+                                    <img src={'images/type_'+camper.typeName+'.jpg'} alt="音乐日记|misical diary"></img>
+                                        <figcaption>
+                                            <h2>
+                                                {camper.typeName}
+                                                <br></br>
+                                            <span>
+                                                ({camper.count})
+                                            </span>
+                                            </h2>
+                                            <p>
+                                                {camper.typeName}
+                                            </p>
+                                        </figcaption>
+                                </figure>
+                            </li>
+                        </a>
                     </div>
                 </div>
             </Router>

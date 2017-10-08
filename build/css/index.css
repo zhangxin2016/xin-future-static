@@ -8,6 +8,14 @@ body {
 }
 
 #articleAll{
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 10%;
+    float: left;
+    border-radius:10px;
+    margin-bottom: 60px;
+}
+#articleDetail{
     width: 60%;
     margin-top: 60px;
     margin-left: 20%;
